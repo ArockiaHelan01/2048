@@ -1,0 +1,27 @@
+<header>
+    <div class="header-container">
+        <h2>
+            {{#link-to "home"}}
+                2048 Puzzle
+            {{/link-to}}
+        </h2>
+        <ul>
+            <li>
+                {{#link-to "leaderboard"}}
+                    Leaderboard
+                {{/link-to}}
+            </li>
+            <li>
+                {{#link-to "about"}}
+                    About
+                {{/link-to}}
+            </li>
+            <li>
+                {{#link-to "profile"}}
+                    Profile
+                {{/link-to}}
+            </li>
+        </ul>
+    </div>
+</header>
+{{yield}}

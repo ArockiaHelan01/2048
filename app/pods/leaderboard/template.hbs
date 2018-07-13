@@ -1,0 +1,25 @@
+<div class="leaderboard-wrap">
+    <div class="search-container">
+        {{input type="text" value="" placeholder="Type to search"}}
+        <button {{action "doSearch"}}>Search</button>
+    </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>User</th>
+                <th>Score</th>
+                <th>Country</th>
+            </tr>
+            {{#each model as |list|}}
+                <tr class="leaderboard-row">
+                    <td>{{list.rank}}</td>
+                    <td>{{list.user}}</td>
+                    <td>{{list.score}}</td>
+                    <td>{{list.country}}</td>
+                </tr>
+            {{/each}}
+        </table>
+    </div>
+</div>
+{{outlet}}

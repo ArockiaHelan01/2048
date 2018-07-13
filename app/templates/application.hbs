@@ -1,5 +1,22 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+{{! -- welcome-page --}}
+<div class="app-container">
+    <div>
+        {{header-layout}}
+        <div class="body-container">
+            {{outlet}}
+        </div>
+        {{!-- <div class="grid-chooser">
+            <p>Choose your grid Layout</p>
+            <form name="start-game-form" {{action "startGame" on="submit"}}>
+                <select>
+                    <option>4</option>
+                    <option>6</option>
+                    <option>8</option>
+                </select>
+                <button>Start Game!</button>
+            </form>    
+        </div> --}}
+        {{!-- {{grid-layout}} --}}
+    </div>        
+</div>

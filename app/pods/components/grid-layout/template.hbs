@@ -1,0 +1,47 @@
+<div class="grid-container">
+    <h3>Join the numbers and get to the 2048 tiles</h3>
+    <div class="grid-wrapper">
+        <div class="actuator">
+            <div><h5>Score</h5><span>1097</span></div>
+            <div><h5>Best</h5><span>74959</span></div>
+            {{!-- <div><span>Duration</span></div> --}}
+        </div>
+        <div class="grid-layout">
+            <div class="grid-row">
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+                <div class="grid-cell"><span></span></div>
+            </div>
+        </div> 
+        <div class="grid-controls">
+            <button>Undo</button>
+            <button {{action "resetGame"}}>Restart</button>
+        </div>
+    </div>
+</div>
+{{!-- {{#if lose}}
+    <div class="overlay-wrap">
+        <h1>Game Over</h1>
+        <button {{action "startGame"}}>Try Again</button>
+    </div>
+{{/if}} --}}
+{{yield}}
